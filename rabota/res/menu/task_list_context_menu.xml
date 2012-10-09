@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/task_list_context_finish"
+        android:title="@string/finish_task"/>
+    <item
+        android:id="@+id/task_list_context_resume"
+        android:title="@string/resume_task"/>
+    <item
+        android:id="@+id/task_list_context_view"
+        android:title="@string/open_task_details"/>
+    <item
+        android:id="@+id/task_list_context_edit"
+        android:title="@string/edit_task"/>
+    <item
+        android:id="@+id/task_list_context_reset"
+        android:title="@string/reset_task"/>
+    <item
+        android:id="@+id/task_list_context_delete"
+        android:title="@string/delete_task"/>
+
+</menu>

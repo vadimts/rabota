@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_edit_task"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/label_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <EditText
+            android:id="@+id/text_task_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapSentences" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_starts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/layout_title"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/label_starts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/starts"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <GridLayout
+            android:id="@+id/layout_radio_group_starts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:orientation="horizontal"
+            android:rowCount="3" >
+
+            <RadioButton
+                android:id="@+id/radio_space_starts"
+                android:layout_column="0"
+                android:layout_row="0"
+                android:text="@string/at"
+                android:visibility="invisible" />
+
+            <RadioGroup
+                android:id="@+id/radio_group_starts"
+                android:layout_column="0"
+                android:layout_columnSpan="2"
+                android:layout_gravity="fill"
+                android:layout_row="0"
+                android:layout_rowSpan="2"
+                android:orientation="vertical" >
+
+                <RadioButton
+                    android:id="@+id/radio_immediately"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/immediately" />
+
+                <RadioButton
+                    android:id="@+id/radio_starts_at"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/at" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/button_from_time"
+                android:layout_height="40dp"
+                android:layout_column="1"
+                android:layout_gravity="left"
+                android:layout_marginLeft="10dip"
+                android:layout_row="1"
+                android:text="@string/button_set_time"
+                android:textAppearance="?android:attr/textAppearance" />
+
+        </GridLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_ends"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/layout_starts"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/label_ends"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ends"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <GridLayout
+            android:id="@+id/layout_radio_group_ends"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:orientation="horizontal"
+            android:rowCount="3" >
+
+            <RadioButton
+                android:id="@+id/radio_space_ends"
+                android:layout_column="0"
+                android:layout_row="0"
+                android:text="@string/at"
+                android:visibility="invisible" />
+
+            <RadioGroup
+                android:id="@+id/radio_group_ends"
+                android:layout_column="0"
+                android:layout_columnSpan="2"
+                android:layout_gravity="fill"
+                android:layout_row="0"
+                android:layout_rowSpan="3"
+                android:orientation="vertical" >
+
+                <RadioButton
+                    android:id="@+id/radio_manually"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/manually" />
+
+                <RadioButton
+                    android:id="@+id/radio_ends_at"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/at" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/button_till_time"
+                android:layout_height="40dp"
+                android:layout_column="1"
+                android:layout_marginLeft="10dip"
+                android:layout_row="1"
+                android:text="@string/button_set_time"
+                android:textAppearance="?android:attr/textAppearance" />
+
+        </GridLayout>
+
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/checkbox_finished"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/layout_ends"
+        android:layout_marginTop="20dp"
+        android:text="@string/already_finished" />
+
+    <Button
+        android:id="@+id/button_add_task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="@string/add_task" />
+
+    <Button
+        android:id="@+id/button_edit_task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/button_add_task"
+        android:text="@string/update_task" />
+
+    <Button
+        android:id="@+id/button_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/button_edit_task"
+        android:text="@string/cancel" />
+
+</RelativeLayout>

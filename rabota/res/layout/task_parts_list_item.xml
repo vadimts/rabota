@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceListItemSmall" >
+
+    <ImageView
+        android:id="@+id/icon_task_part"
+        android:layout_width="20sp"
+        android:layout_height="20sp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/task_part"
+        android:src="@drawable/check" />
+
+    <eu.tsvetkov.rabota.view.NotEmptyTextView
+        android:id="@+id/text_task_part_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/icon_task_part"
+        android:layout_alignParentTop="true"
+        android:textSize="14sp" />
+
+    <eu.tsvetkov.rabota.view.TimeRangeTextView
+        android:id="@+id/text_task_part_time_range"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/icon_task_part"
+        android:layout_below="@+id/text_task_part_comment"
+        android:singleLine="true"
+        android:textSize="12sp" />
+
+    <eu.tsvetkov.rabota.view.DurationTextView
+        android:id="@+id/text_task_part_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/text_task_part_comment"
+        android:singleLine="true"
+        android:textSize="12sp" />
+
+</RelativeLayout>

@@ -1,0 +1,193 @@
+<resources>
+
+    <string name="rabota">Rabota</string>
+    <string name="app_name">Rabota</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_new_task">Add new task</string>
+    <string name="current_tasks">Current tasks</string>
+    <string name="label_new_task">New task</string>
+    <string name="button_set_time">set time</string>
+    <string name="button_start">Go!</string>
+    <string name="button_new_task">New task</string>
+    <color name="bg">#F5F5F5</color>
+
+    <string name="default_task_title">New Task</string>
+    <string name="task_in_progress">Task in progress</string>
+
+    <string name="starts">Starts</string>
+    <string name="started">Started</string>
+    <string name="immediately">immediately</string>
+    <string name="at">at</string>
+    <string name="ends">Ends</string>
+    <string name="ended">Ended</string>
+    <string name="manually">manually</string>
+    <string name="already_finished">Already finished</string>
+    <string name="page_left">&lt;</string>
+    <string name="page_right">&gt;</string>
+    <string name="add_new_task">Add new task</string>
+    <string name="send_invoice">Send invoice</string>
+
+    <string name="add_task">Add task</string>
+    <string name="start_task">Start task</string>
+    <string name="pause_task">Pause task</string>
+    <string name="resume_task">Resume task</string>
+    <string name="finish_task">Finish task</string>
+    <string name="reset_task">Reset task</string>
+    <string name="edit_task">Edit task</string>
+    <string name="open_task_details">Open task details</string>
+    <string name="update_task">Update task</string>
+    <string name="delete_task">Delete task</string>
+    <string name="title">Title</string>
+    <string name="duration">Duration</string>
+    <string name="time_range">Time range</string>
+    <string name="done">Done</string>
+    <string name="no_tasks">Nothing to do</string>
+    <string name="running">running</string>
+    <string name="paused">paused</string>
+    <string name="scheduled">scheduled</string>
+
+    <string name="task_parts">Task parts</string>
+    <string name="task_part">Task part</string>
+    <string name="part">Part</string>
+    <string name="task_part_running">running</string>
+    <string name="task_part_comment">Part comment</string>
+    <string name="task_part_start">Part start</string>
+    <string name="task_part_range_delimiter"> - </string>
+    <string name="task_part_end">Part end</string>
+    <string name="task_part_duration_delimiter"> = </string>
+    <string name="task_parts_list_empty">Task has not been worked on</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="not_applicable">n/a</string>
+    <string name="error_value">[ERROR]</string>
+
+    <string name="per_hour">per hour</string>
+    <string name="per_day">per day</string>
+    <string name="hours">hours</string>
+    <string name="days">days</string>
+    <string name="hourly_rate">hourly rate</string>
+    <string name="daily_rate">daily rate</string>
+
+    <string name="format_time_date">HH:mm \'on\' dd.MM.yyyy</string>
+    <string name="format_time_yesterday">HH:mm \'yesterday\'</string>
+    <string name="format_time_today">HH:mm \'today\'</string>
+    <string name="format_time_tomorrow">HH:mm \'tomorrow\'</string>
+    <string name="format_time">HH:mm</string>
+    <string name="format_time_24">kk:mm</string>
+    <string name="format_date">dd.MM.yyyy</string>
+    <string name="format_day_date">dd LLL, EEEE</string>
+    <string name="format_date_suffix">\' \'(dd.MM.yy)</string>
+    <string name="format_month_year">LLLL yyyy</string>
+    <string name="format_week_year">\'Week\' ww, yyyy</string>
+    <string name="format_week_date_range">%1$s (%2$s)</string>
+    <string name="format_duration_hours">%d hr</string>
+    <string name="format_duration_minutes">%d min</string>
+    <string name="format_duration_seconds">%d sec</string>
+    <string name="format_duration_days">%1$.4f (%2$s)</string>
+    <string name="format_work_duration">%1$s: %2$s</string>
+    <string name="format_time_range">%1$s-%2$s</string>
+    <string name="format_price">###.##0.00</string>
+    <string name="format_rate">%1$s %2$s</string>
+    <string name="format_work_rate">%1$s: %2$s</string>
+    <string name="format_tax">%1$s%% %2$s</string>
+
+    <string name="invoice_sent">Invoice sent out</string>
+    <string name="invoice_not_sent">Error sending the invoice\n</string>
+
+    <!-- Application preferences -->
+    <string name="preferences">Preferences</string>
+    <string name="preference_current_value">%s</string>
+
+   	<!-- General preferences -->
+    <string name="pref_general">General settings</string>
+    <string name="pref_general_time_step">Update frequency of the task list</string>
+	<string-array name="pref_general_time_step_values">
+	    <item>5000</item>
+	    <item>15000</item>
+	    <item>30000</item>
+	    <item>60000</item>
+	    <item>300000</item>
+	    <item>900000</item>
+	    <item>1800000</item>
+	    <item>3600000</item>
+	</string-array>
+	<string-array name="pref_general_time_step_entries">
+	    <item>5 seconds</item>
+	    <item>15 seconds</item>
+	    <item>30 seconds</item>
+	    <item>1 minute</item>
+	    <item>5 minutes</item>
+	    <item>15 minutes</item>
+	    <item>30 minutes</item>
+	    <item>1 hour</item>
+	</string-array>
+    <string name="pref_default_general_time_step">60000</string>
+
+   	<!-- Invoice email preferences -->
+    <string name="pref_invoice_email">Invoice email</string>
+    <string name="pref_invoice_email_to">Invoice email TO</string>
+    <string name="pref_invoice_email_bcc">Invoice email BCC</string>
+    <string name="pref_invoice_email_subject">Invoice email subject</string>
+    <string name="pref_default_invoice_email_to"></string>
+    <string name="pref_default_invoice_email_bcc"></string>
+    <string name="pref_default_invoice_email_subject">Invoice {invoice number}</string>
+    <string name="pref_summary_invoice_email_to">Email address(es) invoice will be sent to, e.g.:\n Jane Roe &lt;jane@foobar.com>; Richard Roe &lt;richard@foobar.com></string>
+    <string name="pref_summary_invoice_email_bcc">Email address(es) invoice will be BCC\'ed to</string>
+    <string name="pref_summary_invoice_email_subject">Subject of the invoice email</string>
+
+   	<!-- Invoice template preferences -->
+    <string name="pref_invoice_template">Invoice template</string>
+    <string name="pref_invoice_number">Invoice number</string>
+    <string name="pref_invoice_header">Header</string>
+    <string name="pref_invoice_address">Address</string>
+    <string name="pref_invoice_place_date">Place and date</string>
+    <string name="pref_invoice_title">Title</string>
+    <string name="pref_invoice_text">Text</string>
+    <string name="pref_default_invoice_number">\'D\'yyyy-M</string>
+    <string name="pref_default_invoice_header">&lt;span>&lt;b>John Doe&lt;/b>, IT consulting&lt;/span>\n&lt;span style=\"float:right\">Marienplatz 1, 80331 München, Germany. Telefon: +49 (89) 1111 2222&lt;/span></string>
+    <string name="pref_default_invoice_address">Foobar Inc.\n&lt;br> Mrs. Jane Roe\n&lt;br> 555 5th Avenue \n&lt;br> New York, NY 10017, USA</string>
+    <string name="pref_default_invoice_place_date">München, {invoice date}</string>
+    <string name="pref_default_invoice_title">INVOICE Nr. {invoice number}\n&lt;br> &lt;small>SSN 987-65-4320&lt;/small></string>
+    <string name="pref_default_invoice_text">Hi Jane,\n&lt;p> here is my invoice for the following services:\n&lt;p> &lt;b>Job description:&lt;/b>\n&lt;br> Software development in the Foobar project.\n&lt;p> &lt;b>Time period:&lt;/b>\n&lt;br> {time period}\n&lt;p> &lt;b>Fee:&lt;/b>\n&lt;br> {work duration}\n&lt;br> {rate}\n&lt;br> {netto} + VAT {tax} = &lt;b>Total {brutto}&lt;/b>\n&lt;p> Payment should be done within 45 days after receipt of invoice.\n&lt;br> Please transfer the amount to the following bank account:\n&lt;p> &lt;b>John Doe\n&lt;br> Account number: 111222333\n&lt;br> Bank code: 444555666\n&lt;br> Deutsche Kreditbank Berlin&lt;/b>\n&lt;p> Thank you for excellent cooperation!\n&lt;p> Best regards,\n&lt;p> John Doe</string>
+    <string name="pref_summary_invoice_header">Header</string>
+    <string name="pref_summary_invoice_address">Address</string>
+    <string name="pref_summary_invoice_place_date">Place and date</string>
+    <string name="pref_summary_invoice_title">Title</string>
+    <string name="pref_summary_invoice_text">Text</string>
+
+   	<!-- Payment preferences -->
+    <string name="pref_payment">Payment</string>
+    <string name="pref_payment_currency">Currency</string>
+    <string name="pref_payment_charge_unit">Time units being charged</string>
+	<string-array name="pref_payment_charge_unit_values">
+	    <item>0</item>
+	    <item>1</item>
+	</string-array>
+	<string-array name="pref_payment_charge_unit_entries">
+	    <item>per hour</item>
+	    <item>per day</item>
+	</string-array>
+    <string name="pref_payment_rate">Default rate</string>
+	<string-array name="pref_payment_currency_values">
+	    <item>EUR</item>
+	    <item>USD</item>
+	    <item>RUB</item>
+	</string-array>
+    <string name="pref_payment_tax">Tax</string>
+    <string name="pref_default_payment_currency">EUR</string>
+    <string name="pref_default_payment_charge_unit">0</string>
+    <string name="pref_default_payment_rate">60.0</string>
+    <string name="pref_default_payment_tax">19</string>
+
+    <string name="pref_invoice_tasks_title">Tasks title</string>
+    <string name="pref_invoice_tasks_text">Tasks text</string>
+    <string name="pref_default_invoice_tasks_title">Invoice tasks title</string>
+    <string name="pref_default_invoice_tasks_text">Invoice tasks text</string>
+    <string name="pref_summary_invoice_tasks_title">Tasks title</string>
+    <string name="pref_summary_invoice_tasks_text">Tasks text</string>
+
+    <string name="dialog_send_invoice">Pause all tasks and send the invoice?</string>
+
+    <string name="error_empty_invoice_email_to">Email address for sending invoices is undefined, please specify it in preferences.</string>
+
+</resources>

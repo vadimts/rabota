@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceScreen android:title="@string/pref_general" >
+        <ListPreference
+            android:defaultValue="@string/pref_default_general_time_step"
+            android:entries="@array/pref_general_time_step_entries"
+            android:entryValues="@array/pref_general_time_step_values"
+            android:key="@string/pref_general_time_step"
+            android:title="@string/pref_general_time_step" >
+        </ListPreference>
+    </PreferenceScreen>
+
+    <PreferenceScreen android:title="@string/pref_invoice_email" >
+        <EditTextPreference
+            android:defaultValue="@string/pref_default_invoice_email_to"
+            android:key="@string/pref_invoice_email_to"
+            android:summary="@string/pref_summary_invoice_email_to"
+            android:title="@string/pref_invoice_email_to" />
+        <EditTextPreference
+            android:defaultValue="@string/pref_default_invoice_email_bcc"
+            android:key="@string/pref_invoice_email_bcc"
+            android:summary="@string/pref_summary_invoice_email_bcc"
+            android:title="@string/pref_invoice_email_bcc" />
+        <EditTextPreference
+            android:defaultValue="@string/pref_default_invoice_email_subject"
+            android:key="@string/pref_invoice_email_subject"
+            android:title="@string/pref_invoice_email_subject" />
+    </PreferenceScreen>
+
+    <PreferenceScreen android:title="@string/pref_invoice_template" >
+        <EditTextPreference
+            android:defaultValue="@string/pref_default_invoice_number"
+            android:key="@string/pref_invoice_number"
+            android:title="@string/pref_invoice_number" />
+        <EditTextPreference
+            android:defaultValue="@string/pref_default_invoice_header"
+            android:key="@string/pref_invoice_header"
+            android:title="@string/pref_invoice_header" />
+        <EditTextPreference
+            android:defaultValue="@string/pref_default_invoice_address"
+            android:key="@string/pref_invoice_address"
+            android:title="@string/pref_invoice_address" />
+        <EditTextPreference
+            android:defaultValue="@string/pref_default_invoice_place_date"
+            android:key="@string/pref_invoice_place_date"
+            android:title="@string/pref_invoice_place_date" />
+        <EditTextPreference
+            android:defaultValue="@string/pref_default_invoice_title"
+            android:key="@string/pref_invoice_title"
+            android:title="@string/pref_invoice_title" />
+        <EditTextPreference
+            android:defaultValue="@string/pref_default_invoice_text"
+            android:key="@string/pref_invoice_text"
+            android:title="@string/pref_invoice_text" />
+    </PreferenceScreen>
+
+    <PreferenceScreen android:title="@string/pref_payment" >
+        <ListPreference
+            android:defaultValue="@string/pref_default_payment_currency"
+            android:entries="@array/pref_payment_currency_values"
+            android:entryValues="@array/pref_payment_currency_values"
+            android:key="@string/pref_payment_currency"
+            android:title="@string/pref_payment_currency" >
+        </ListPreference>
+        <ListPreference
+            android:defaultValue="@string/pref_default_payment_charge_unit"
+            android:entries="@array/pref_payment_charge_unit_entries"
+            android:entryValues="@array/pref_payment_charge_unit_values"
+            android:key="@string/pref_payment_charge_unit"
+            android:title="@string/pref_payment_charge_unit" >
+        </ListPreference>
+        <EditTextPreference
+            android:defaultValue="@string/pref_default_payment_rate"
+            android:inputType="numberDecimal"
+            android:key="@string/pref_payment_rate"
+            android:title="@string/pref_payment_rate" />
+        <EditTextPreference
+            android:defaultValue="@string/pref_default_payment_tax"
+            android:inputType="number"
+            android:key="@string/pref_payment_tax"
+            android:title="@string/pref_payment_tax" />
+    </PreferenceScreen>
+</PreferenceScreen>

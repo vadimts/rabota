@@ -1,0 +1,72 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="eu.tsvetkov.rabota"
+    android:versionCode="2"
+    android:versionName="0.11b" >
+
+    <uses-sdk
+        android:minSdkVersion="4"
+        android:targetSdkVersion="15" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".Rabota"
+        android:icon="@drawable/rabota_96x96"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <provider
+            android:name="eu.tsvetkov.rabota.provider.TaskProvider"
+            android:authorities="eu.tsvetkov.rabota.provider"
+            android:exported="false" />
+
+        <service
+            android:name="eu.tsvetkov.rabota.intent.RabotaGaeConnectionService"
+            android:enabled="true" />
+
+        <activity
+            android:name=".activity.StartActivity"
+            android:label="@string/rabota" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.TaskListActivity"
+            android:label="@string/current_tasks" >
+        </activity>
+        <activity
+            android:name=".activity.EditTaskActivity"
+            android:exported="false"
+            android:label="@string/add_new_task" >
+            <intent-filter>
+                <action android:name="eu.tsvetkov.rabota.intent.EDIT_TASK" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="vnd.android.cursor.item/vnd.tsvetkov.rabota-task" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.INSERT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="vnd.android.cursor.dir/vnd.tsvetkov.rabota-task" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.ViewTaskActivity"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="eu.tsvetkov.rabota.intent.VIEW_TASK" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="vnd.android.cursor.item/vnd.tsvetkov.rabota-task" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.PreferencesActivity" />
+    </application>
+
+</manifest>
